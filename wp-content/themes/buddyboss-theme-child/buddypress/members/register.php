@@ -8,7 +8,7 @@
  */
 ?>
 
-<?php _e( '(required)', 'buddypress' ); ?>
+<?php _e('(required)', 'buddypress'); ?>
 
 
 
@@ -90,15 +90,12 @@
 
 				<?php endif; ?>
 
-
-
-
 				<div class="signup_password signup_password_confirm">
 
 					<?php bp_nouveau_signup_form(); ?>
 
 				</div>
-			
+
 		</div><!-- //.layout-wrap -->
 
 		<?php bp_nouveau_signup_terms_privacy(); ?>
