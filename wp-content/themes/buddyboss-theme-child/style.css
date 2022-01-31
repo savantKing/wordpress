@@ -1,0 +1,220 @@
+/*
+Theme Name: BuddyBoss Theme Child
+Theme URI: https://www.buddyboss.com/
+Template: buddyboss-theme
+Author: BuddyBoss
+Author URI: https://www.buddyboss.com/
+Description: BuddyBoss Theme makes the BuddyBoss Platform look beautiful.
+Version: 1.7.9.1643353912
+Updated: 2022-01-28 07:11:52
+
+*/
+body.buddypress.register #buddypress input[type="submit"],
+body.buddypress.activation #buddypress input[type="submit"] {
+  /* .base Button/Primary */
+
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+  position: static;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+
+
+
+  /* Link/rest */
+
+  background: #295CFF;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.buddypress-wrap extended-default-reg {
+  max-width: 750px;
+}
+
+
+
+@media screen and (min-width: 55em) {
+
+  body.register #page #primary .entry-header,
+  body.register .buddypress-wrap {
+    max-width: 750px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  }
+}
+
+
+
+/*
+ account_Header
+  */
+body.buddypress.register article.bp_register .entry-header h1 {
+  /* Aanmelden */
+
+  position: static;
+  width: 191px;
+  height: 44px;
+  left: 0px;
+  top: 0px;
+
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
+
+  display: flex;
+  align-items: center;
+
+  /* Greys/text primary */
+
+  color: #1E1E1E;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+body.buddypress.register article.bp_register {
+  max-width: 750px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.register-section-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 14px;
+}
+
+.bs-bp-container-reg #buddypress #signup-form.standard-form input[type=text] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 14px;
+
+}
+
+#signup_password,
+#signup_password_conform {
+
+  display: block;
+  grid-template-columns: 1fr;
+  grid-column-gap: 14px;
+
+}
+
+.signup_password,
+.signup_password_confirm {
+
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 14px;
+}
+
+
+element.style #field_1_1 {
+  font-weight: bold;
+}
+
+
+#element.style {
+  font-weight: bold;
+}
+
+
+
+
+/* label, input {
+    display: block;
+} */
+
+/* @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+  
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  } */
+
+
+/* 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #000;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  .signup-form  {
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+  }
+  
+  form div {
+    width: 75%;
+  }
+  
+  .signup-form  input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .firstandlast {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+Button_registration_hover_color
+
+*/
+
+
+
