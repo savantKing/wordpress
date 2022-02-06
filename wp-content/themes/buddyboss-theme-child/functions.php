@@ -23,18 +23,18 @@ ADDED BY HAND
 add_filter('bp_get_the_profile_field_name', function ($field_name) {
     if ($field_name === 'Voornaam') {
         return '<style>{font-family:bold}</style> Voornaam';
-    }
+    }   
+
+    
 
     return $field_name;
 });
 
-// add_filter('bp_get_the_profile_field_lable', function ($field_name) {
-//     if ($field_name === 'Voornaam') {
-//         return '<style >Voornaam</style>';
-//     }
 
-//     return $field_name;
-// });
+
+add_filter( 'bp_nouveau_get_signup_fields', function($fields){
+    var_dump( $fields);
+});
 
 
 function bp_change_required_label($translated_string, $field_id) {

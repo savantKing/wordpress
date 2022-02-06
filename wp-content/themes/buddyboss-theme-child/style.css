@@ -102,45 +102,111 @@ body.buddypress.register article.bp_register {
 
 }
 
-.register-section-form {
+ .register-section-form, .editfield.field_3.field_gebruikersnaamnickname,.bb-signup-field.signup_email   {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 14px;
-}
+} 
 
-.bs-bp-container-reg #buddypress #signup-form.standard-form input[type=text] {
+/* .editfield.field_1.field_voornaam.field,.editfield.field_2.field_achternaam{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 14px;
 
+} */
+
+/* .register-section-form2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 14px;
+}  */
+
+/* #field_3, .bb-signup-field.signup_email {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 14px;
+
+} */
+/* 
+#signup_email{
+
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-column-gap: 14px;
+
+} */
+
+/* .register-section.extended-profile.register-section-form,
+.editfield.field_3.field_gebruikersnaamnickname.field_order_2.required-field.visibility-public.field_type_textbox,
+.bb-signup-field.signup_email {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 14px;
+
+} */
+
+
+
+
+/* .bs-bp-container-reg #buddypress #signup-form.standard-form input[type=text] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 14px;
+
+} */
+
+/* 
+.bb-signup-field.signup_email, #signup_email
+{
+  display: inline-block;
+  min-width: 48.8%;
+  grid-column-gap: 14px;
+
+}   */
+
+
+/* 
+
+.editfield.field_3.field_gebruikersnaamnickname,
+.bb-signup-field.signup_email,
+#signup_email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 14px;
+
+} */
+
+
+.bb-signup-field.signup_password,
+.bb-signup-field.signup_password_confirm {
+
+  display: inline-block;
+  min-width: 48.8%;
+  grid-column-gap: 14px;
 }
 
-#signup_password,
+/* #signup_password,
 #signup_password_conform {
 
   display: block;
   grid-template-columns: 1fr;
   grid-column-gap: 14px;
 
+} */
+
+
+
+
+/* 
+div {
+  display: inline-block;
 }
 
-.signup_password,
-.signup_password_confirm {
-
+div label {
   display: block;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 14px;
-}
-
-
-element.style #field_1_1 {
-  font-weight: bold;
-}
-
-
-#element.style {
-  font-weight: bold;
-}
+} */
 
 
 
@@ -215,6 +281,3 @@ element.style #field_1_1 {
 Button_registration_hover_color
 
 */
-
-
-

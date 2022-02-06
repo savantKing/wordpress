@@ -8,10 +8,6 @@
  */
 ?>
 
-<?php _e('(required)', 'buddypress'); ?>
-
-
-
 
 <?php bp_nouveau_signup_hook('before', 'page'); ?>
 
@@ -44,7 +40,7 @@
 
 					<?php bp_nouveau_signup_hook('before', 'signup_profile'); ?>
 
-					<div class="register-section extended-profile  register-section-form " id="profile-details-section">
+					<div class="register-section extended-profile  register-section-form  " id="profile-details-section">
 
 						<?php /* Use the profile field loop to render input fields for the 'base' profile field group */ ?>
 
@@ -90,11 +86,11 @@
 
 				<?php endif; ?>
 
-				<div class="signup_password signup_password_confirm">
 
-					<?php bp_nouveau_signup_form(); ?>
 
-				</div>
+				<?php bp_nouveau_signup_form(); ?>
+
+
 
 		</div><!-- //.layout-wrap -->
 
@@ -106,6 +102,8 @@
 	?>
 
 	<?php bp_nouveau_signup_hook('custom', 'steps'); ?>
+
+
 
 	</form>
 
