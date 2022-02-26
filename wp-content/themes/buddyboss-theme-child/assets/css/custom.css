@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+This is your custom stylesheet.
+
+Add your own styles here to make theme updates easier.
+To override any styles from other stylesheets, simply copy them into here and edit away.
+
+Make sure to respect the media queries! Otherwise you may
+accidentally add desktop styles to the mobile layout.
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+--------------------------------------------------------------*/
+
+
+body.login.login-split-page .login-split .split-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}

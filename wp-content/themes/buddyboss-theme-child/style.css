@@ -8,39 +8,154 @@ Description: BuddyBoss Theme makes the BuddyBoss Platform look beautiful.
 Version: 1.7.9.1643353912
 Updated: 2022-01-28 07:11:52
 
+
 */
-body.buddypress.register #buddypress input[type="submit"],
-body.buddypress.activation #buddypress input[type="submit"] {
-  /* .base Button/Primary */
 
 
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+
+  font-family: SF UI Display;
+  line-height: 1;
+  font-size: 1.5rem;
+
+}
 
 
+/**
+ * For register page
+ */
+@media (min-width: 992px) {
+  body.buddypress.register.login-split-page .login-split .split-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #270A4C !important;
+    background: linear-gradient(to top, #3204fdba, #9907facc), url(./wordpress/wp-content/uploads/2022/02/bg-mycells.png);
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+
+  }
+}
+
+/**
+ * for login page
+ */
+@media (min-width: 992px) {
+  body.login.login-split-page .login-split {
+    width: 50%;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    display: block;
+    background-color: red;
+  }
+}
+
+
+
+/**
+ * background image
+ */
+/* .login-split {
+  background-image: url(./wordpress/wp-content/uploads/2022/02/bg-mycells.png);
+  background-size: covers;
+  background-position: 50% 50%;
+
+
+} */
+
+label[for="field_1_1, bp-messages bp-feedback error"],
+input[name="field"] {
+  display: none !important;
+}
+
+
+
+/**
+ * default color register button
+ */
+body.buddypress.register #buddypress input[type="submit"] {
   position: static;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
 
-
-
-
   /* Link/rest */
-
-  background: #295CFF;
+  background-color: #295CFF !important;
   border-radius: 3px;
 
   /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 0px 0px;
+}
+
+
+/**
+ * Hover register button
+ */
+body.buddypress.register #buddypress input[type="submit"]:hover {
+  background-color: #1241D8 !important;
+}
+
+
+
+/**
+ * press  register button
+ */
+
+body.buddypress.register #buddypress input[type="submit"]:active {
+  background-color: #072892 !important;
+}
+
+
+
+
+.bs-bp-container-reg .buddypress-wrap #pass-strength-result.strong {
+  background-color: #188740 !important;
+  border-color: #188740 !important;
+
+}
+
+/*
+password not strong
+*/
+.bs-bp-container-reg .buddypress-wrap #pass-strength-result.short {
+  background-color: #C01717 !important;
+  border-color: #C01717 !important;
+
+}
+
+/*
+validation error input field
+*/
+.container-reg #buddypress,
+#signup-form.standard-form div.error {
+
+  background-color: transparent !important;
+}
+
+.bs-bp-container-reg #buddypress #signup-form.standard-form div.error {
+
+  color: #C01717;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 6px 12px;
+  margin-bottom: 3px;
+  border: 0;
 }
 
 .buddypress-wrap extended-default-reg {
@@ -59,6 +174,9 @@ body.buddypress.activation #buddypress input[type="submit"] {
   }
 }
 
+/*Red border error message*/
+
+
 
 
 /*
@@ -73,7 +191,7 @@ body.buddypress.register article.bp_register .entry-header h1 {
   left: 0px;
   top: 0px;
 
-  font-family: SF UI Display;
+  font-family: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -89,6 +207,7 @@ body.buddypress.register article.bp_register .entry-header h1 {
   /* Inside auto layout */
   flex: none;
   order: 0;
+  align-self: stretch;
   flex-grow: 0;
   margin: 24px 0px;
 }
@@ -98,186 +217,38 @@ body.buddypress.register article.bp_register {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 
- .register-section-form, .editfield.field_3.field_gebruikersnaamnickname,.bb-signup-field.signup_email   {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 14px;
-} 
-
-/* .editfield.field_1.field_voornaam.field,.editfield.field_2.field_achternaam{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 14px;
-
-} */
-
-/* .register-section-form2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 14px;
-}  */
-
-/* #field_3, .bb-signup-field.signup_email {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 14px;
-
-} */
-/* 
-#signup_email{
-
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-column-gap: 14px;
-
-} */
-
-/* .register-section.extended-profile.register-section-form,
-.editfield.field_3.field_gebruikersnaamnickname.field_order_2.required-field.visibility-public.field_type_textbox,
-.bb-signup-field.signup_email {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 14px;
-
-} */
-
-
-
-
-/* .bs-bp-container-reg #buddypress #signup-form.standard-form input[type=text] {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 14px;
-
-} */
-
-/* 
-.bb-signup-field.signup_email, #signup_email
-{
-  display: inline-block;
-  min-width: 48.8%;
-  grid-column-gap: 14px;
-
-}   */
-
-
-/* 
-
-.editfield.field_3.field_gebruikersnaamnickname,
-.bb-signup-field.signup_email,
-#signup_email {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 14px;
-
-} */
-
-
-.bb-signup-field.signup_password,
-.bb-signup-field.signup_password_confirm {
-
-  display: inline-block;
-  min-width: 48.8%;
-  grid-column-gap: 14px;
+@font-face {
+  font-family: "SF UI Display";
+  src: url("//db.onlinewebfonts.com/t/762c72a2791c9d3eadc7e3b6b935aa69.eot");
 }
 
-/* #signup_password,
-#signup_password_conform {
+.bs-bp-container-reg #buddypress #signup-form.standard-form legend {
+  position: static;
+  width: 330px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
 
-  display: block;
-  grid-template-columns: 1fr;
-  grid-column-gap: 14px;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
 
-} */
+
+  /* Greys/text primary */
+
+  color: #1E1E1E;
 
 
+  /* Inside auto layout */
 
-
-/* 
-div {
-  display: inline-block;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 6px 0px;
 }
-
-div label {
-  display: block;
-} */
-
-
-
-
-/* label, input {
-    display: block;
-} */
-
-/* @media (max-width: 800px) {
-    .form-inline input {
-      margin: 10px 0;
-    }
-  
-    .form-inline {
-      flex-direction: column;
-      align-items: stretch;
-    }
-  } */
-
-
-/* 
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: #000;
-  }
-  
-  label {
-    display: block;
-  }
-  
-  .signup-form  {
-    background: #fff;
-    margin: 0 auto;
-    padding: 10px;
-    width: 90%;
-  }
-  
-  form div {
-    width: 75%;
-  }
-  
-  .signup-form  input {
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 5px;
-    width: 100%;
-  }
-  
-  .firstandlast {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-Button_registration_hover_color
-
-*/

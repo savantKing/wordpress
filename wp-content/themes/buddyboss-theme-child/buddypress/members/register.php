@@ -16,6 +16,7 @@
 	<?php bp_nouveau_template_notices(); ?>
 
 	<?php bp_nouveau_user_feedback(bp_get_current_signup_step()); ?>
+	<p><?php _e('Maak hier jouw account aan. Na aanmelden kun je in de omgeving direct aangeven waarin je geïnteresseerd bent en wat je graag zou willen doen voor Mycells..', 'buddypress'); ?></p>
 
 	<form action="" name="signup_form" id="signup-form" class="standard-form signup-form " method="post" enctype="multipart/form-data">
 
@@ -32,7 +33,7 @@
 
 				</div><!-- #basic-details-section -->
 
-				<?php bp_nouveau_signup_hook('after', 'account_details'); ?>
+				<?php bp_nouveau_signup_hook('before', 'account_details'); ?>
 
 				<?php /***** Extra Profile Details ******/ ?>
 
@@ -57,7 +58,7 @@
 							?>
 
 								<div <?php bp_field_css_class('editfield');
-										bp_field_data_attribute(); ?>>
+											bp_field_data_attribute(); ?>>
 									<fieldset>
 
 
